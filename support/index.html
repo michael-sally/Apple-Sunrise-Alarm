@@ -1,46 +1,148 @@
-Sunrise: Gentle Wake Alarm — Help
-Quick answers to common questions. The same help is in the app under Settings → Help. These steps work on iOS 26 and iOS 27.
-My alarm didn’t ring
-Check these, one at a time:
-	1	In Sunrise, check the alarm is switched on, with the right time and days, and that you haven’t skipped that morning (Home shows “skipped” with Undo skip).
-	2	Check Sunrise is allowed to set alarms. In Sunrise, go to Settings → Backup alarm: it should say “Alarms allowed”. If it doesn’t, open the Settings app, tap Apps → Sunrise and allow alarms.
-	3	Turn up your alarm volume: in the Settings app, tap Sounds & Haptics, then Alarms and Timers (or Ringtone and Alert, if you don’t see Alarms and Timers).
-	4	If your free trial has ended, alarms are switched off until you unlock Sunrise.
-	5	Open Wake history in Sunrise to see what happened that morning.
-Your alarm uses the iPhone’s own alarm system, so it rings even if Sunrise is closed.
-My bedtime reminder didn’t arrive
-First, check Remind me is on in Sunrise’s Settings. Sleep or Do Not Disturb may also be hiding the reminder. To let it through:
-	1	Open the Settings app and tap Focus.
-	2	Tap Sleep, then Apps.
-	3	Add Sunrise. Do the same for Do Not Disturb if you use it.
-Still nothing? In the Settings app, tap Apps → Sunrise → Notifications and check notifications are allowed.
-This only affects the reminder. Your alarm rings either way.
-The sunrise didn’t start
-The sunrise light only works while bedside mode is open on the screen.
-	•	Start bedside mode before you sleep and leave it open.
-	•	Don’t lock your iPhone with the side button, or swipe Sunrise away.
-	•	Using Screen Time? In the Settings app, tap Screen Time → Always Allowed and add Sunrise, so Downtime doesn’t close it overnight.
-If bedside mode was closed, your alarm still rings, just without the sunrise.
-How do I skip a morning?
-	•	The night before: on Home, tap Skip tomorrow. Changed your mind? Tap Undo skip.
-	•	During the sunrise: in bedside mode, use Slide if you’re up.
-	•	From the Lock Screen: tap I’m up, then tap again to confirm. You don’t need to unlock your iPhone.
-Skipping cancels just that morning’s alarm and its backup. The rest of your alarms carry on as normal.
-My own sound won’t import
-	•	Sunrise accepts MP3, M4A and WAV files, up to 10 minutes long and 50 MB.
-	•	Files in iCloud Drive are downloaded when you add them, so you need to be online. If one still won’t add, open it once in the Files app first.
-	•	Protected music, such as songs downloaded from Apple Music, can’t be used.
-My alarm is too quiet
-	•	For the system alarm and the backup alarm: in the Settings app, tap Sounds & Haptics, then Alarms and Timers (or Ringtone and Alert).
-	•	For nature sounds and your own sounds: use your iPhone’s volume buttons before you start bedside mode. Sunrise warns you if the volume is low.
-Start bedside mode when I plug in
-You can set up a shortcut once, and bedside mode starts by itself when you plug in at night. It takes about two minutes. In Sunrise, go to Settings → Bedside mode → Start automatically and follow the steps.
-Does it use a lot of battery?
-Bedside mode keeps the screen on all night, very dim. Plugging in is best, and you’ll wake up fully charged.
-On battery it uses some charge overnight, so start with plenty. A lower night brightness, or Blackout, uses less.
-The torch didn’t come on
-The torch only comes on in the last third of the sunrise, and only while bedside mode is open. It dims, then turns itself off if your iPhone gets warm. New alarms use the screen only, so check the alarm’s light is set to Torch or Both in Edit alarm.
-Still stuck?
-Email michaels@axrcom.com and we’ll help. In the app, Settings → Help → Email support adds your Sunrise and iOS versions for you.
-Privacy: Privacy Policy
-© 2026 Michael Sheehy · Sunrise: Gentle Wake Alarm
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help – Sunrise: Gentle Wake Alarm</title>
+<meta name="description" content="Quick answers and support for the Sunrise: Gentle Wake Alarm app for iPhone.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #FBF7F2;
+    --text: #2A1C14;
+    --muted: #6B5A4E;
+    --accent: #B4521E;
+    --line: #E6DBD0;
+    --card: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0E0B0A;
+      --text: #F3E6DA;
+      --muted: #B8A497;
+      --accent: #F2A65A;
+      --line: #2A201C;
+      --card: #1A1412;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.25rem; margin: 40px 0 8px; }
+  p, ul { margin: 0 0 14px; }
+  a { color: var(--accent); }
+  .updated { color: var(--muted); margin-bottom: 32px; }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  .table-wrap { overflow-x: auto; margin: 0 0 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 18px; margin: 0 0 12px; }
+  summary { cursor: pointer; font-weight: 600; padding: 14px 0; list-style-position: outside; }
+  details[open] summary { border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+  details > *:last-child { margin-bottom: 16px; }
+  ol, ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .path { white-space: nowrap; font-weight: 600; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sunrise: Gentle Wake Alarm — Help</h1>
+  <p class="updated">Quick answers to common questions. The same help is in the app under Settings → Help. These steps work on iOS 26 and iOS 27.</p>
+
+  <details open>
+    <summary>My alarm didn’t ring</summary>
+    <p>Check these, one at a time:</p>
+    <ol>
+      <li>In Sunrise, check the alarm is switched on, with the right time and days, and that you haven’t skipped that morning (Home shows “skipped” with Undo skip).</li>
+      <li>Check Sunrise is allowed to set alarms. In Sunrise, go to Settings → Backup alarm: it should say “Alarms allowed”. If it doesn’t, open the Settings app, tap <span class="path">Apps → Sunrise</span> and allow alarms.</li>
+      <li>Turn up your alarm volume: in the Settings app, tap <span class="path">Sounds &amp; Haptics</span>, then <span class="path">Alarms and Timers</span> (or <span class="path">Ringtone and Alert</span>, if you don’t see Alarms and Timers).</li>
+      <li>If your free trial has ended, alarms are switched off until you unlock Sunrise.</li>
+      <li>Open Wake history in Sunrise to see what happened that morning.</li>
+    </ol>
+    <p>Your alarm uses the iPhone’s own alarm system, so it rings even if Sunrise is closed.</p>
+  </details>
+
+  <details>
+    <summary>My bedtime reminder didn’t arrive</summary>
+    <p>First, check <strong>Remind me</strong> is on in Sunrise’s Settings. Sleep or Do Not Disturb may also be hiding the reminder. To let it through:</p>
+    <ol>
+      <li>Open the Settings app and tap <span class="path">Focus</span>.</li>
+      <li>Tap <span class="path">Sleep</span>, then <span class="path">Apps</span>.</li>
+      <li>Add Sunrise. Do the same for Do Not Disturb if you use it.</li>
+    </ol>
+    <p>Still nothing? In the Settings app, tap <span class="path">Apps → Sunrise → Notifications</span> and check notifications are allowed.</p>
+    <p>This only affects the reminder. Your alarm rings either way.</p>
+  </details>
+
+  <details>
+    <summary>The sunrise didn’t start</summary>
+    <p>The sunrise light only works while bedside mode is open on the screen.</p>
+    <ul>
+      <li>Start bedside mode before you sleep and leave it open.</li>
+      <li>Don’t lock your iPhone with the side button, or swipe Sunrise away.</li>
+      <li>Using Screen Time? In the Settings app, tap <span class="path">Screen Time → Always Allowed</span> and add Sunrise, so Downtime doesn’t close it overnight.</li>
+    </ul>
+    <p>If bedside mode was closed, your alarm still rings, just without the sunrise.</p>
+  </details>
+
+  <details>
+    <summary>How do I skip a morning?</summary>
+    <ul>
+      <li><strong>The night before:</strong> on Home, tap <strong>Skip tomorrow</strong>. Changed your mind? Tap <strong>Undo skip</strong>.</li>
+      <li><strong>During the sunrise:</strong> in bedside mode, use <strong>Slide if you’re up</strong>.</li>
+      <li><strong>From the Lock Screen:</strong> tap <strong>I’m up</strong>, then tap again to confirm. You don’t need to unlock your iPhone.</li>
+    </ul>
+    <p>Skipping cancels just that morning’s alarm and its backup. The rest of your alarms carry on as normal.</p>
+  </details>
+
+  <details>
+    <summary>My own sound won’t import</summary>
+    <ul>
+      <li>Sunrise accepts MP3, M4A and WAV files, up to 10 minutes long and 50 MB.</li>
+      <li>Files in iCloud Drive are downloaded when you add them, so you need to be online. If one still won’t add, open it once in the Files app first.</li>
+      <li>Protected music, such as songs downloaded from Apple Music, can’t be used.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>My alarm is too quiet</summary>
+    <ul>
+      <li>For the system alarm and the backup alarm: in the Settings app, tap <span class="path">Sounds &amp; Haptics</span>, then <span class="path">Alarms and Timers</span> (or <span class="path">Ringtone and Alert</span>).</li>
+      <li>For nature sounds and your own sounds: use your iPhone’s volume buttons before you start bedside mode. Sunrise warns you if the volume is low.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Start bedside mode when I plug in</summary>
+    <p>You can set up a shortcut once, and bedside mode starts by itself when you plug in at night. It takes about two minutes. In Sunrise, go to <strong>Settings → Bedside mode → Start automatically</strong> and follow the steps.</p>
+  </details>
+
+  <details>
+    <summary>Does it use a lot of battery?</summary>
+    <p>Bedside mode keeps the screen on all night, very dim. Plugging in is best, and you’ll wake up fully charged.</p>
+    <p>On battery it uses some charge overnight, so start with plenty. A lower night brightness, or Blackout, uses less.</p>
+  </details>
+
+  <details>
+    <summary>The torch didn’t come on</summary>
+    <p>The torch only comes on in the last third of the sunrise, and only while bedside mode is open. It dims, then turns itself off if your iPhone gets warm. New alarms use the screen only, so check the alarm’s light is set to Torch or Both in Edit alarm.</p>
+  </details>
+
+  <h2>Still stuck?</h2>
+  <p>Email <a href="mailto:michaels@axrcom.com?subject=Sunrise%20help">michaels@axrcom.com</a> and we’ll help. In the app, Settings → Help → Email support adds your Sunrise and iOS versions for you.</p>
+
+  <p>Privacy: <a href="https://michael-sally.github.io/Apple-Sunrise-Alarm/">Privacy Policy</a></p>
+
+  <footer>© 2026 Michael Sheehy · Sunrise: Gentle Wake Alarm</footer>
+</main>
+</body>
+</html>
